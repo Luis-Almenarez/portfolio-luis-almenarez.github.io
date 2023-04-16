@@ -2,14 +2,18 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 h1 {font-size: 3.5em;} 
 h2 { font-size: 2.7em;}
-h3 {font-size: 1.25em;}
+h3 {font-size: 2em;}
 p {font-size: 1.25em;}
 ul {list-style: none;}
 li {font-size: 1.25em;}
@@ -17,9 +21,9 @@ li {font-size: 1.25em;}
 button{
     font-size: 1.5em;
     font-weight: bold;
-    padding: 20px 40px;
+    padding: 10px 20px;
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.5);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     color: white;
     background-color: #5F0A87;
@@ -31,25 +35,29 @@ button:hover{
 }
 
 .container{
-    width: 1366px;
+    max-width: 1100px;
     margin: auto;
 }
 
+.color-font{
+    color: #5F0A87;
+}
+
 header{
-    background-color: #eee;
+    background-color: rgb(245, 245, 245);
 }
 
 header .logo{
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
-    color: #2F004F;
-    font-size: 1.8em;
+    color: #5F0A87;
+    font-size: 1.6em;
+
 }
 
 header .container{
-    text-transform: uppercase;
-    display: flex;
+    display: flex;    
     flex-direction: column;
     align-items: center;
 }
@@ -58,7 +66,7 @@ header nav{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 25px;    
 }
 
 header a{
@@ -69,7 +77,7 @@ header a{
 }
 
 header a:hover{
-    color: #7209B7;
+    color: #2F004F;
 }
 
 #hero{
@@ -79,4 +87,96 @@ header a:hover{
     text-align: center;
     flex-direction: column;
     height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("IMG/wallpaper-single-page.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#about .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#projects{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#projects .container{
+    padding: 100px 0px;
+}
+
+#projects h2{
+    margin-top: 0;
+    font-size: 3.2em;
+    text-transform: uppercase;
+}
+
+#projects p{
+    display: none;
+}
+
+#projects .card{        
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 12px;
+    border-radius: 15px;
+
+}
+
+.card:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("IMG/full-stack.jpg");
+}
+
+.card:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("IMG/front-end.png");
+}
+
+.card:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("IMG/other.jpg");
+}
+
+#properties .container{
+    text-align: center;    
+    padding: 200px;
+}
+
+#properties li{    
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+#contacme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
 }
