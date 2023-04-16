@@ -1,3 +1,4 @@
+/* ESTILOS GENERALES */
 *{
     box-sizing: border-box;
 }
@@ -47,6 +48,11 @@ header{
     background-color: rgb(245, 245, 245);
 }
 
+/* ESTILOS GENERALES */
+
+/* -----------------------------------------------------------------------------------------------------------------*/
+
+/* ESTILOS DE LA CABECERA */
 header .logo{
     margin: 0;
     padding: 25px 30px;
@@ -80,6 +86,12 @@ header a:hover{
     color: #2F004F;
 }
 
+/* ESTILOS DE LA CABECERA */
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* ESTILOS DE HERO */
+
 #hero{
     display: flex;
     align-items: center;
@@ -99,11 +111,19 @@ header a:hover{
     background-position: center center;
 }
 
+/* ESTILOS DE HERO */
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* ESTILOS DE ABOUT */
 #about .container{
     text-align: center;
     padding: 200px 12px;
 }
+/* ESTILOS DE ABOUT */
 
+
+/* ESTILOS PROJECTS AND CARDS */
 #projects{
     background-color: rgb(30, 30, 30);
     color: white;
@@ -159,7 +179,12 @@ header a:hover{
     )
     ,url("IMG/other.jpg");
 }
+/* ESTILOS PROJECTS AND CARDS */
 
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* ESTILOS PROPIERTIES */
 #properties .container{
     text-align: center;    
     padding: 200px;
@@ -169,7 +194,10 @@ header a:hover{
     margin: 15px 0px;
     font-weight: bold;
 }
+/* ESTILOS PROPIERTIES */
 
+
+/* ESTILOS CONTACTME */
 #contacme{
     display: flex;
     flex-direction: column;
@@ -188,7 +216,10 @@ header a:hover{
 #contactme button{
     font-size: 8vh;
 }
+/* ESTILOS CONTACTME */
 
+
+/* ESTILOS FOOTER */
 #footer{
     background-color: #CECCCC; 
 }
@@ -213,4 +244,29 @@ header a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* ESTILOS FOOTER */
+
+/* FIN FORMATO MOVIL */
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* INICIO FORMATO ESCRITORIO  */
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
 }
