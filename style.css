@@ -190,6 +190,12 @@ header a:hover{
     padding: 200px;
 }
 
+#properties h2{
+    margin-top: 0;
+    font-size: 3.2em;
+    text-transform: uppercase;
+}
+
 #properties li{    
     margin: 15px 0px;
     font-weight: bold;
