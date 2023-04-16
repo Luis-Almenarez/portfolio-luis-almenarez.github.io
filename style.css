@@ -180,3 +180,11 @@ header a:hover{
     color: white;
     height: 80vh;
 }
+
+#contactme h2{
+    font-size: 10vh;
+}
+
+#contactme button{
+    font-size: 8vh;
+}
