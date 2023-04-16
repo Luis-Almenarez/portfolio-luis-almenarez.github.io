@@ -188,3 +188,29 @@ header a:hover{
 #contactme button{
     font-size: 8vh;
 }
+
+#footer{
+    background-color: #CECCCC; 
+}
+
+#footer p{
+    margin: 0;
+    color: #494a52;
+}
+
+#footer a{
+    text-decoration: none;
+    color: #494a52;
+}
+
+#footer a:hover{
+    scale: 0.1, 0.2;
+    color: #2F004F;
+}
+
+#footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
