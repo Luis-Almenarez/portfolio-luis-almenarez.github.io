@@ -333,7 +333,7 @@ header a:hover{
         padding: 40px;
     }
 
-    #properties .img-container{
+    #properties{
         background-image: url(IMG/propierties.jpg);
         background-repeat: no-repeat;
         background-size: 500px 500px;
@@ -408,9 +408,10 @@ header a:hover{
     #properties {
         background-image: url(IMG/propierties.jpg);
         background-repeat: no-repeat;
-        background-size: 350px 350px;
-        background-position: calc(100vw - 500px) 100px;
+        background-size: 400px 350px;
+        background-position: calc(100vw - 700px) 70px;
     }
+    
 }
 
 /* Regla por defecto */
@@ -451,4 +452,3 @@ header a:hover{
     #properties .container{
         padding: 180px;
     }
-}
