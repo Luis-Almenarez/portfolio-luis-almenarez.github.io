@@ -8,7 +8,7 @@ html{
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
 }
 
@@ -149,8 +149,13 @@ header a:hover{
     background-size: cover;
     padding: 50px;
     margin: 12px;
-    border-radius: 15px;
+    border-radius: 15px;    
+    transition: all 300ms;
+}
 
+#projects .card:hover{        
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
 }
 
 .card:first-child{
@@ -270,9 +275,180 @@ header a:hover{
         justify-content: space-between;
     }
 
+    #hero h1{
+        font-size: 4em;
+    }
+
     header nav{
         flex-direction: row;
         padding-bottom: 0;
         padding-right: 20px;
+    }
+
+    #about .container{        
+        display: flex;
+        justify-content: space-evenly;        
+    }
+
+    #about .text{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;     
+        display: flex;        
+        flex-direction: column;
+        justify-content: center;       
+    }
+
+    #about .image-container{
+        background-image: url("IMG/about.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 350px;
+        border-radius: 10px;
+        transition: all 300ms;
+    }
+
+    #about .image-container:hover{
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);        
+    }
+
+
+    #projects .programs{
+        display: flex;
+        justify-content: center;
+    }
+
+    #projects p{
+        display: block;
+        padding-bottom: 30px;
+    }
+
+    #projects h3{
+        margin-top: 0;
+    }
+
+    #projects .card{
+        padding: 40px;
+    }
+
+    #properties .img-container{
+        background-image: url(IMG/propierties.jpg);
+        background-repeat: no-repeat;
+        background-size: 500px 500px;
+        background-position: calc(100vw - 900px) 100px;                
+    }
+
+    #properties .container{
+        text-align: initial;
+    }
+
+    #properties ul{
+        margin-left: -40px;
+    }
+}
+
+@media (min-width: 1200px){
+
+    #properties{
+        background-position-x: calc(100vw - 600px);
+    }
+}
+@media (min-width: 763px) {
+    #projects .card {
+        padding: 10px;
+    }
+
+    #properties {
+        background-image: url(IMG/propierties.jpg);
+        background-repeat: no-repeat;
+        background-size: 350px 350px;
+        background-position: calc(100vw - 500px) 100px;
+    }
+
+    #properties .container {
+        padding: 50px;
+        text-align: initial;
+    }
+}
+
+@media (min-width: 822px) {
+    #projects .card {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 882px) {
+    #projects .card {
+        padding: 30px;
+    }
+}
+
+@media (min-width: 972px) and (max-width: 1000px) {
+    #projects .card {
+        padding: 45px;
+    }
+
+    #properties {
+        text-align: left;
+        background-position-x: calc(90vw - 500px);
+    }
+
+    #properties ul {
+        margin-left: -100px;
+    }
+
+    #properties h2 {
+        margin-left: -90px;
+    }
+}
+
+@media (min-width: 800px) {
+    #properties {
+        background-image: url(IMG/propierties.jpg);
+        background-repeat: no-repeat;
+        background-size: 350px 350px;
+        background-position: calc(100vw - 500px) 100px;
+    }
+}
+
+/* Regla por defecto */
+@media (max-width: 762px) {
+    #projects .card {
+        padding: 5px;
+    }
+
+    #properties {
+        background-image: none;
+        background-position: initial;
+    }
+
+    #properties .container {
+        padding: 220px;
+        text-align: initial;
+    }
+
+    #properties ul {
+        margin-left: initial;
+    }
+
+    #properties h2 {
+        margin-left: initial;
+    }
+}
+
+
+    #properties ul {
+        margin-left: -190px;
+    }
+
+    #properties h2{
+        margin-top: -90px;
+        margin-left: -150px;
+    }
+
+    #properties .container{
+        padding: 180px;
     }
 }
