@@ -1,4 +1,6 @@
 /* ESTILOS GENERALES */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
 *{
     box-sizing: border-box;
 }
@@ -340,11 +342,12 @@ header p:hover{
     text-align: center;
     background-color: rgb(30, 30, 30);
     color: white;
-    height: 80vh;
+    padding-top: 20px;
+    height: 100vh;
 }
 
 #contactme h2{
-    font-size: 10vh;
+    font-size: 20vh;
 }
 
 #contactme button{
@@ -352,6 +355,86 @@ header p:hover{
 }
 /* ESTILOS CONTACTME */
 
+.compartir{
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.compartir span{
+    width: 200px;
+    line-height: 80px;
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.compartir nav{
+    font-size: 0;
+}
+
+.compartir a{
+    line-height: 80px;
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+    background: linear-gradient(180deg, #480774, #2F004F);
+    color: #ffffff;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    margin: 0 -5px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.compartir a:nth-child(1) {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin-left: 0;
+}
+
+.compartir a:nth-child(1):hover {
+    background-color: #ea4335;
+}
+
+.compartir a:nth-child(2):hover {
+    background-color: #050608;
+}
+.compartir a:nth-child(3):hover {
+    background-color: #dd4ec5;
+}
+.compartir a:nth-child(4) {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-right: 0;
+}
+.compartir a:nth-child(4):hover {
+    background-color: #000000;
+}
+.compartir:hover span, .compartir.hover span {
+    opacity: 0;
+}
+.compartir:hover a {
+    margin: 0 10px;
+    color: #413838;
+    font-size: 28px;
+    border-radius: 50%;
+    background: #ffffff15; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);; 
+    -webkit-backdrop-filter: blur(2px);; 
+
+}
+.compartir:hover a:hover {
+    color: #fff;
+}
 
 /* ESTILOS FOOTER */
 #footer{
@@ -371,6 +454,7 @@ header p:hover{
 #footer a:hover{
     scale: 0.1, 0.2;
     color: #2F004F;
+    font-weight: bold;
 }
 
 #footer .container{
