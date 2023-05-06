@@ -407,14 +407,14 @@ header p:hover{
 }
 
 .compartir a:nth-child(1):hover {
-    background-color: #ea4335;
+    background-color: #0a66c2;
 }
 
 .compartir a:nth-child(2):hover {
-    background-color: #050608;
+    background-color: #1d9bf0;
 }
 .compartir a:nth-child(3):hover {
-    background-color: #dd4ec5;
+    background-color: #5cabee;
 }
 .compartir a:nth-child(4) {
     border-top-right-radius: 40px;
